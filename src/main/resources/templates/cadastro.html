@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="header">
+    <h1>
+        <a href="/"> Home</a>
+    </h1>
+
+    <div>
+        <a href="/cadastro">Cadastrar</a>
+    </div>
+</div>
+<div>
+    <form action="/resposta" method="post">
+        <input type="text" placeholder="Nome" name="nome">
+        <textarea placeholder="Descrição" name="descricao" id="" cols="30" rows="10"></textarea>
+        <select name="categoria">
+            <option value="lazer">Lazer</option>
+            <option value="festa">Festa</option>
+            <option value="reave">Reave</option>
+            <option value="esporte">Esporte</option>
+            <option value="outros">Outros</option>
+        </select>
+        <input type="date" placeholder="Data" name="dataEvento">
+        <input type="time" placeholder="Hora de Início" name="horaInicio">
+        <input type="time" placeholder="Hora de Término" name="horaFim">
+        <input type="text" placeholder="Rua" name="rua">
+        <input type="text" placeholder="Número" name="numero">
+        <input type="text" placeholder="Bairro" name="bairro">
+        <input type="text" placeholder="Estado" name="estado">
+        <input type="text" placeholder="País" name="pais">
+        <button>Enviar</button>
+    </form>
+</div>
+</body>
+</html>

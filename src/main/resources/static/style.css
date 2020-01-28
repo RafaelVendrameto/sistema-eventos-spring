@@ -1,0 +1,11 @@
+.header{
+    background-color:aliceblue;
+    overflow: auto;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-style: italic;
+    font-size: large;
+}
