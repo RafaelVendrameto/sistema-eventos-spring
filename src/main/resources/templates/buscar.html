@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cadastro Eventos</title>
+    <title>Cadastro de Eventos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +15,13 @@
     </div>
 
     <div>
-        <h2>Obrigado por finalizar o cadastro!</h2>
+        <form method="get" action="/evento">
+            <label>Digite o nome do evento desejado: </label>
+            <input type="text" name="nome">
+            <button>Procurar</button>
+        </form>
     </div>
+
+    <p th:text="${msg}"></p>
 </body>
 </html>

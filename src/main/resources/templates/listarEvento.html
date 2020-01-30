@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro Eventos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>
+            <a href="/"> Home</a>
+        </h1>
+    </div>
+
+    <div>
+        <h2>Seu Evento: </h2>
+
+        <div>
+            <p>Nome: <span th:text="${evento.nome}"></span></p>
+            <img th:src="${evento.imagem}" width="25%">
+            <p>Categoria: <span th:text="${evento.categoria}"></span></p>
+            <p>Data: <span th:text="${evento.dataEvento}"></span></p>
+            <p>Inicio:<span th:text="${evento.horaInicio}"></span></p>
+            <p>Fim: <span th:text="${evento.horaFim}"></span></p>
+            <p>
+                Rua: <span th:text="${evento.rua}">, </span>
+                Estado: <span th:text="${evento.estado}">, </span>
+                Pais: <span th:text="${evento.pais}">, </span>
+                Bairro: <span th:text="${evento.bairro}">, </span>
+            </p>
+            <hr>
+        </div>
+
+    </div>
+</body>
+</html>
